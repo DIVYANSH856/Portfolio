@@ -1,0 +1,350 @@
+/* Resetting default styles for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Base styles for the entire body */
+body {
+    font-family: montserrat;
+    background-color: #f8f8f8; /* Added a light background color */
+}
+
+/* Header navigation styles */
+nav {
+    height: 105px;
+    width: 100%;
+    background: #64CCC5;
+}
+
+/* Styles for the name label in the header */
+label.myname {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    padding: 0 30px;
+    line-height: 80px;
+}
+
+/* Styles for the navigation links in the header */
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 105px;
+    color: white;
+}
+nav a {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 7px 7px;
+    border-radius: 5px;
+}
+
+/* Hover effect for active links in the header */
+.active:hover {
+    border: 1px solid white;
+    transition: .5s;
+}
+
+/* Styles for icon in the header */
+nav .icon {
+    color: white;
+}
+
+/* Education section styles */
+.eduction_heading {
+    font-size: 50px;
+    padding-left: 16px;
+    color: #64CCC5;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.eduction_description {
+    margin: 33px 5px 5px 63px;
+    font-size: 25px;
+    color: rgb(99 92 92);
+}
+
+/* Work Experience section styles */
+.Experience {
+    margin: 20px 0px 0px 0px;
+}
+
+.work_description {
+    margin: 33px 5px 5px 63px;
+    font-size: 25px;
+    color: rgb(99 92 92);
+}
+
+.work_heading {
+    font-size: 50px;
+    padding-left: 16px;
+    color: #64CCC5;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+/* About Me section styles */
+.about_me {
+    margin-top: 50px;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+
+.about_info {
+    margin: 10px;
+}
+
+/* About Me heading styles */
+.about_head {
+    margin: 100px 10px 5px 30px;
+    font-size: 55px;
+    font-weight: bold;
+    color: #64CCC5;
+}
+
+/* About Me description styles */
+.about_description {
+    margin: 10px 5px 5px 30px;
+    font-size: 25px;
+    color: rgb(99 92 92);
+}
+
+
+/* Skills section styles */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjusted spacing between cards */
+}
+
+.skill-card {
+    width: 170px;
+    height: 227px;
+    background-color: #fff; /* Added a white background */
+    border: 1px solid #ccc;
+    margin: 20px; /* Increased margin */
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s; /* Added transition for pop-up and border */
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card:hover {
+    border-color: #007bff;
+    transform: scale(1.05); /* Slight pop-up effect */
+}
+
+.skill-card img {
+    width: 100%;
+    height: 60%; /* Adjusted height for the image */
+    object-fit: cover;
+}
+
+/* Skill name styles */
+.skill-name {
+    position: absolute;
+    bottom: 10px; /* Adjusted positioning */
+    left: 0;
+    width: 100%;
+    padding: 8px; /* Increased padding */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1.2em; /* Increased font size */
+    font-weight: bold; /* Added bold font */
+    margin: 0; /* Removed default margin */
+}
+
+/* Skills section heading styles */
+.skills_heading {
+    font-size: 70px;
+    padding-left: 16px;
+    color: #64CCC5;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+/* Projects section styles */
+.projects {
+    font-family: Arial, sans-serif; 
+    margin-top: 50px;
+    height: fit-content;
+    width: 100%;
+}
+
+/* Projects section heading styles */
+.projects_heading {
+    font-size: 55px;
+    padding-left: 30px;
+    color: #64CCC5;
+    font-weight: bold;
+}
+
+/* Projects container styles */
+.projects_container {
+    padding-top: 5px;
+    height: fit-content;
+    margin: 10px 10px 20px 60px !important;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+/* Project container styles */
+.projects_con {
+    margin: 5px;
+    padding: 15px;
+    width: 90%;
+    text-align: left;
+}
+
+/* Project title styles */
+.project_title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Project description styles */
+.project_description {
+    display: flex;
+}
+
+.description p {
+    margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+/* Project link styles */
+.description a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal line styles */
+.line {
+    margin: 10px 0px 5px 150px;
+    padding-left: 100px;
+    height: 1.5px;
+    width: 70%;
+    background-color: #c7c0c0;
+    box-shadow: 0 0 1px #c7c0c0;
+}
+/* Contact Section */
+.contact {
+    margin-top: 50px;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+
+.contact_heading {
+    font-size: 50px;
+    padding-left: 16px;
+    color: #64CCC5;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.contact_form {
+    margin: 30px ;
+}
+
+.contact_form input,
+.contact_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact_form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #64CCC5;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirmationMessage {
+    color: green;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 10px;
+    background-color: #64CCC5;
+    height: 30vh;
+    color: rgb(113, 59, 59);
+    font-size: 13px;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+/* Scroll-to-top button styles */
+.top_arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #43e2d7;
+    border: #64CCC5;
+    border-radius: 50%;
+    position: fixed;
+    right: 0.5rem;
+    z-index: 20;
+    bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Certification section heading styles */
+.certification_heading {
+    font-size: 40px;
+    padding-left: 16px;
+    color: #64CCC5;
+    font-weight: bold;
+}
+
+/* Certification description styles */
+.certification {
+    margin-bottom: 20px; /* Add space between certifications */
+}
+
+.certification_description{
+    margin: 33px 5px 5px 63px;
+    font-size: 15px;
+    color: rgb(99 92 92);
+}
